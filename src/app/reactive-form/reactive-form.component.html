@@ -1,0 +1,15 @@
+<form [formGroup]="loginForm" (ngSubmit)="loginuser()">
+    <h2>REGITER HERE</h2>
+    <input type="text" name="Name" placeholder="Enter your name" formControlName="Name" />
+    <span style="color:red" *ngIf="name.invalid && name.touched">This Field is required</span>
+
+    <br /><br />
+
+    <input type="password" name="password" placeholder="Enter Password" formControlName="password" />
+    <span style="color:red" *ngIf="pass.invalid && pass.touched">Password is required</span>
+
+    <br /><br />
+
+    <button [disabled]="loginForm.invalid">Register</button>
+    <button type="reset">Reset</button>
+</form>

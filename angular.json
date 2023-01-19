@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "regform"
+  "defaultProject": "regform",
+  "cli": {
+    "analytics": false
+  }
 }
